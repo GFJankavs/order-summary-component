@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --primary-blue-pale: hsl(225, 100%, 94%);
+    --primary-blue-bright: hsl(245, 75%, 52%);
+    --neutral-blue-pale: hsl(225, 100%, 98%);
+    --neutral-blue-saturated: hsl(224, 23%, 55%);
+    --neutral-blue-dark: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--neutral-blue-pale);
+}
+
+main {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    border: none;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    background-color: var(--neutral-blue-pale);
+    box-shadow: 0px 9px 11px 0px var(--neutral-blue-saturated);
+}
+
+.container__content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.plan__container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.plan__left,
+.plan {
+    display: flex;
+}
+
+.plan__left {
+    gap: 20px;
+    align-items: center;
+}
+
+.plan {
+    flex-direction: column;
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn--proceed {
+    background-color: var(--primary-blue-bright);
+    color: var(--primary-blue-pale);
+}
+
+.btn--cancel {
+    background-color: transparent;
+    color: var(--neutral-blue-dark);
+    cursor: pointer;
+}
